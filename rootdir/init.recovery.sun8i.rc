@@ -1,0 +1,15 @@
+on early-init
+    start ueventd
+
+on init
+    insmod /nand.ko
+    insmod /disp.ko
+    insmod /lcd.ko
+    insmod /sunxi-keyboard.ko
+    insmod /stk831x.ko
+    insmod /gt9xx_ts.ko
+    insmod /gslX680.ko
+    insmod /sw-device.ko
+    
+  
+
